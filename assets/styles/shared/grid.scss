@@ -1,0 +1,20 @@
+.row .row { margin:  0 -1.5em; }
+.col      { padding: 0  1.5em; }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after { clear: both; }
+
+@media only screen { .col {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}}
+
+// Viewport sizes
+$small: 640px;
+$medium: 768px;
+$large: 960px;
+$extraLarge: 1200px;
