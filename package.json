@@ -15,7 +15,8 @@
     "clean": "gulp clean",
     "lint": "eslint --cache .",
     "nsp": "gulp nsp",
-    "start": "cd dist && node server.generated.js"
+    "start": "cd dist && node server.generated.js",
+    "postinstall": "webpack && gulp && cd dist"
   },
   "engines": {
     "node": ">=6.4.0"
@@ -30,9 +31,7 @@
     "react-document-title": "^2.0.2",
     "react-dom": "^15.3.1",
     "react-router": "^2.7.0",
-    "require-dir": "^0.3.0"
-  },
-  "devDependencies": {
+    "require-dir": "^0.3.0",
     "autoprefixer-loader": "^3.1.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.5",
