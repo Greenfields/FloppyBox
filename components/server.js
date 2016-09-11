@@ -65,12 +65,14 @@ export default () => {
 							<title>${title}</title>
 						</head>
 						<body>
-						    <div id="content">${content}</div>
-						    <script type="text/javascript" src="/scripts/third-party/phaser.min.js"></script>
+						    <div id="content">
+                                ${content}
+						        <script type="text/javascript" src="/scripts/third-party/phaser.min.js"></script>
+						        <script type="text/javascript" src="/scripts/main.js"></script>
+						    </div>
                             <script type="application/json" id="initial-data">${data}</script>
                             <script type="application/json" id="local-translations">${JSON.stringify(dictionary)}</script>
                             <script type="text/javascript" src="/app.js"></script>
-                            <script type="text/javascript" src="/scripts/main.js"></script>
 						</body>
 					</html>`
                 );

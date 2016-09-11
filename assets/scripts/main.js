@@ -24,8 +24,8 @@ var mainState = {
         // Set the physics system
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
-        // Display the bird at the position x=100 and y=245
-        this.box = game.add.sprite(100, 245, 'bird');
+        // Display the box at the position x=100 and y=245
+        this.box = game.add.sprite(100, 245, 'box');
 
         // Move the anchor to the left and downward
         this.box.anchor.setTo(-0.2, 0.5);
