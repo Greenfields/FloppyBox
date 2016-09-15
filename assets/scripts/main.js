@@ -18,10 +18,6 @@ var mainState = {
     },
 
     update: function() {
-        if (game.input.activePointer.isDown){
-            this.jump();
-        }
-
         //Add collision detection
         game.physics.arcade.overlap(this.box, this.pipes, this.restartGame, null, this);
     },
