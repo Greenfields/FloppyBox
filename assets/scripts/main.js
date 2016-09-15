@@ -5,10 +5,10 @@ var mainState = {
         // That's where we load the images and sounds
 
         // Load the bird sprite
-        game.load.image('box', '/images/box.png');
+        game.load.image('box', '/images/lego.png');
 
         // Load the pipe sprite
-        game.load.image('pipe', '/images/pipe.png');
+        game.load.image('pipe', '/images/legoblock.png');
 
         //Load the jump sound
         game.load.audio('jump', '/sounds/jump.wav');
